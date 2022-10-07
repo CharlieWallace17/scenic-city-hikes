@@ -1,24 +1,24 @@
-import { Container, Col, Row } from "reactstrap";
-import PictureCard from "./PictureCard";
+import { Col, Row } from "reactstrap";
 import { PARKS } from "../shared/PARKS";
+import FlipCard from "./FlipCard";
 
 const CardsList = () => {
     const parks = PARKS;
 
     return (
-        <Container className="d-flex">
             <Row>
                 {parks.map((park) => {
                     return (
                         park && (
-                            <Col sm='4' key={park.id}>
-                                <PictureCard park={park} />
+                            <Col 
+                            md='4'
+                            key={park.id}>
+                                <FlipCard park={park} />
                             </Col>
                         )
                     );
                 })}
             </Row>
-        </Container>
     );
 };
 

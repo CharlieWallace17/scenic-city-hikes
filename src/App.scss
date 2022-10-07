@@ -6,11 +6,13 @@ $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $header-font: "Rock Salt", sans-serif;
 
-h1,
-h4,
-div.flip-card-back>p {
+#root {
+    background-color: $color-secondary;
+    color: $color-pale;
+    letter-spacing: 4px;
     font-family: $header-font;
-} 
+    height: 100vh;
+}
 
 .jumbotron,
 .navbar-toggler {
@@ -27,12 +29,6 @@ footer {
     letter-spacing: 1px;
 }
 
-body {
-    background-color: $color-secondary;
-    color: $color-pale;
-    letter-spacing: 4px;
-}
-
 footer {
     background-color: $color-dark;
 }
@@ -45,7 +41,7 @@ svg {
     background: linear-gradient($color-primary, $color-dark);
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-} 
+}
 
 .modal-header,
 form,
@@ -53,12 +49,6 @@ form a {
     color: $color-dark;
     font-weight: 600;
     letter-spacing: 0px;
-}
-
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 nav button.btn {
@@ -84,53 +74,30 @@ nav button.btn {
     font-size: 3rem;
 }
 
-h4,
-div.flip-card-back>p {
-    font-weight: bolder;
-    font-size: calc(max(20px, 2vw));
-}
-
 .navbar-toggler-icon {
     width: 32px;
     height: 40px;
     color: $color-dark;
 }
 
-div.flip-card {
-    background-color: transparent;
-    perspective: 1000px;
-    width: calc(max(30%, 500px));
-    height: 500px;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-div.flip-card:hover .flip-card-inner{
-        transform: rotateY(180deg);
-}
-
 .flip-card-back {
     background-color: white;
     color: black;
-    transform: rotateY(180deg);
 }
 
-Card, 
+.card,
 .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-
     padding: 1rem;
     color: black;
     box-shadow: 2px 2px 5px $color-black-transparent;
-} 
+    font-weight: bolder;
+    font-size: calc(max(20px, 2vw));
+}
+
+.c {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    will-change: transform, opacity;
+}

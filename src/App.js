@@ -1,13 +1,15 @@
 import './App.css';
 import CardsList from './components/CardsList';
 import Header from './components/Header';
+import { Container } from 'reactstrap';
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Header />
       <CardsList />
-    </div>
+    </Container>
+    
   );
 }
 
