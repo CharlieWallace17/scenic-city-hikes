@@ -10,7 +10,7 @@ h1,
 h4,
 div.flip-card-back>p {
     font-family: $header-font;
-}
+} 
 
 .jumbotron,
 .navbar-toggler {
@@ -43,7 +43,9 @@ svg {
 
 .jumbotron {
     background: linear-gradient($color-primary, $color-dark);
-}
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+} 
 
 .modal-header,
 form,
@@ -82,7 +84,7 @@ nav button.btn {
     font-size: 3rem;
 }
 
-h4.card-title,
+h4,
 div.flip-card-back>p {
     font-weight: bolder;
     font-size: calc(max(20px, 2vw));
@@ -120,7 +122,7 @@ div.flip-card:hover .flip-card-inner{
     transform: rotateY(180deg);
 }
 
-div.card,
+Card, 
 .flip-card-back {
     position: absolute;
     width: 100%;

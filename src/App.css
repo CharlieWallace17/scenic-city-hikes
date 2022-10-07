@@ -27,7 +27,9 @@ svg {
   fill: #ecf1be; }
 
 .jumbotron {
-  background: linear-gradient(#42855b, #483838); }
+  background: linear-gradient(#42855b, #483838);
+  padding: 2rem 1rem;
+  margin-bottom: 2rem; }
 
 .modal-header,
 form,
@@ -60,7 +62,7 @@ nav button.btn {
 .modal-title {
   font-size: 3rem; }
 
-h4.card-title,
+h4,
 div.flip-card-back > p {
   font-weight: bolder;
   font-size: calc(max(20px, 2vw)); }
@@ -92,7 +94,7 @@ div.flip-card:hover .flip-card-inner {
   color: black;
   transform: rotateY(180deg); }
 
-div.card,
+Card,
 .flip-card-back {
   position: absolute;
   width: 100%;
