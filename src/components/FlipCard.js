@@ -14,7 +14,7 @@ const FlipCard = ({ park }) => {
     return (
         <div className="flip-container" onClick={() => set((state) => !state)}>
             <a.div
-                className="c"
+                className="c back-card"
                 style={{
                     opacity,
                     transform,

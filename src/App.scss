@@ -6,12 +6,11 @@ $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $header-font: "Rock Salt", sans-serif;
 
-#root {
+body {
     background-color: $color-secondary;
     color: $color-pale;
     letter-spacing: 4px;
     font-family: $header-font;
-    height: 100vh;
 }
 
 .jumbotron,
@@ -40,7 +39,6 @@ svg {
 .jumbotron {
     background: linear-gradient($color-primary, $color-dark);
     padding: 2rem 1rem;
-    margin-bottom: 2rem;
 }
 
 .modal-header,
@@ -95,9 +93,29 @@ nav button.btn {
 }
 
 .c {
-    position: absolute;
+    // position: absolute;
     width: 500px;
     height: 500px;
     cursor: pointer;
     will-change: transform, opacity;
+    backface-visibility: hidden;
+}
+
+.my-container {
+    overflow: hidden;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    margin-top: 4rem;
+}
+
+.flip-container {
+    grid-row-start: 1fr;
+    grid-column-start: 1fr;
+    place-self: center;
+}
+
+.back-card {
+    position: absolute;
 }

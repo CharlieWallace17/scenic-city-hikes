@@ -1,9 +1,8 @@
-#root {
+body {
   background-color: #90b77d;
   color: #ecf1be;
   letter-spacing: 4px;
   font-family: "Rock Salt", sans-serif;
-  height: 100vh;
 }
 
 .jumbotron,
@@ -32,7 +31,6 @@ svg {
 .jumbotron {
   background: linear-gradient(#42855b, #483838);
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
 }
 
 .modal-header,
@@ -87,11 +85,30 @@ nav button.btn {
 }
 
 .c {
-  position: absolute;
   width: 500px;
   height: 500px;
   cursor: pointer;
   will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.my-container {
+  overflow: hidden;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+  margin-top: 4rem;
+}
+
+.flip-container {
+  grid-row-start: 1fr;
+  grid-column-start: 1fr;
+  place-self: center;
+}
+
+.back-card {
+  position: absolute;
 }
 
 /*# sourceMappingURL=App.css.map */
