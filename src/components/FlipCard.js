@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useSpring, a } from "react-spring";
-import "../App.css";
 import { Card, CardBody, CardImg } from "reactstrap";
 
 const FlipCard = ({ park }) => {

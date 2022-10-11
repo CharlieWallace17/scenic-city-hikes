@@ -11,6 +11,7 @@ body {
     color: $color-pale;
     letter-spacing: 4px;
     font-family: $header-font;
+    overflow-x: hidden;
 }
 
 .jumbotron,
@@ -93,7 +94,6 @@ nav button.btn {
 }
 
 .c {
-    // position: absolute;
     width: 500px;
     height: 500px;
     cursor: pointer;
@@ -102,7 +102,6 @@ nav button.btn {
 }
 
 .my-container {
-    overflow: hidden;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -119,3 +118,7 @@ nav button.btn {
 .back-card {
     position: absolute;
 }
+
+.bi {
+    font-size: 50px;
+} 

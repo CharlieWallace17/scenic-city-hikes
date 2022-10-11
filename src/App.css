@@ -3,6 +3,7 @@ body {
   color: #ecf1be;
   letter-spacing: 4px;
   font-family: "Rock Salt", sans-serif;
+  overflow-x: hidden;
 }
 
 .jumbotron,
@@ -93,7 +94,6 @@ nav button.btn {
 }
 
 .my-container {
-  overflow: hidden;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -109,6 +109,10 @@ nav button.btn {
 
 .back-card {
   position: absolute;
+}
+
+.bi {
+  font-size: 50px;
 }
 
 /*# sourceMappingURL=App.css.map */
