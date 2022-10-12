@@ -11,7 +11,7 @@ const FlipCard = ({ park }) => {
         config: { mass: 5, tension: 500, friction: 80 },
     });
     return (
-        <div className="flip-container" onClick={() => set((state) => !state)}>
+        <div className="flip-container my-3" onClick={() => set((state) => !state)}>
             <a.div
                 className="c back-card"
                 style={{

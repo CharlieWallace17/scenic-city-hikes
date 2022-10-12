@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
 }
 
-.jumbotron,
+.menu,
 .navbar-toggler {
     background-color: $color-primary;
 }
@@ -24,22 +24,18 @@ nav {
 }
 
 a,
-footer {
+.menu,
+.footer {
     color: $color-pale;
     letter-spacing: 1px;
 }
 
-footer {
+.footer {
     background-color: $color-dark;
 }
 
 svg {
     fill: $color-pale;
-}
-
-.jumbotron {
-    background: linear-gradient($color-primary, $color-dark);
-    padding: 2rem 1rem;
 }
 
 .modal-header,
@@ -105,8 +101,6 @@ nav button.btn {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 2rem;
-    margin-top: 4rem;
 }
 
 .flip-container {
@@ -119,6 +113,15 @@ nav button.btn {
     position: absolute;
 }
 
-.bi {
+.footer .bi {
     font-size: 50px;
 } 
+
+.menu {
+    z-index: 0;
+    color: $color-pale;
+}
+
+.menu .bi {
+    font-size: 20px;
+}

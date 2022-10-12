@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 
-.jumbotron,
+.menu,
 .navbar-toggler {
   background-color: #42855b;
 }
@@ -16,22 +16,18 @@ nav {
 }
 
 a,
-footer {
+.menu,
+.footer {
   color: #ecf1be;
   letter-spacing: 1px;
 }
 
-footer {
+.footer {
   background-color: #483838;
 }
 
 svg {
   fill: #ecf1be;
-}
-
-.jumbotron {
-  background: linear-gradient(#42855b, #483838);
-  padding: 2rem 1rem;
 }
 
 .modal-header,
@@ -97,8 +93,6 @@ nav button.btn {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 2rem;
-  margin-top: 4rem;
 }
 
 .flip-container {
@@ -111,8 +105,17 @@ nav button.btn {
   position: absolute;
 }
 
-.bi {
+.footer .bi {
   font-size: 50px;
+}
+
+.menu {
+  z-index: 0;
+  color: #ecf1be;
+}
+
+.menu .bi {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=App.css.map */
