@@ -19,15 +19,20 @@ body {
     background-color: $color-primary;
 }
 
-nav {
-    background-color: $color-dark;
-}
-
 a,
 .menu,
 .footer {
     color: $color-pale;
     letter-spacing: 1px;
+}
+
+a:hover {
+    color: $color-primary;
+}
+
+
+.menu .ms-auto .nav-link:hover {
+    color: $color-dark;
 }
 
 .footer {
@@ -89,24 +94,29 @@ nav button.btn {
     font-size: calc(max(20px, 2vw));
 }
 
+.card:hover,
+.flip-card-back:hover {
+    rotate: 2deg;
+}
+
 .c {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     cursor: pointer;
     will-change: transform, opacity;
     backface-visibility: hidden;
 }
 
 .my-container {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    // width: 100vw;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
 }
 
 .flip-container {
-    grid-row-start: 1fr;
-    grid-column-start: 1fr;
-    place-self: center;
+    // grid-row-start: 1fr;
+    // grid-column-start: 1fr;
+    // place-self: center;
 }
 
 .back-card {
@@ -117,11 +127,20 @@ nav button.btn {
     font-size: 50px;
 } 
 
-.menu {
+.menu h1,
+.menu .ms-auto .nav-link {
     z-index: 0;
     color: $color-pale;
 }
 
+.menu .ms-auto .nav-link {
+    font-size: 20px;
+}
+
 .menu .bi {
     font-size: 20px;
+}
+
+svg:hover {
+    rotate: 10deg;
 }

@@ -11,7 +11,7 @@ const FlipCard = ({ park }) => {
         config: { mass: 5, tension: 500, friction: 80 },
     });
     return (
-        <div className="flip-container my-3" onClick={() => set((state) => !state)}>
+        <div className="flip-container m-2" onClick={() => set((state) => !state)}>
             <a.div
                 className="c back-card"
                 style={{
@@ -31,9 +31,9 @@ const FlipCard = ({ park }) => {
                 style={{ opacity: opacity.to((o) => 1 - o), transform }}
             >
                 <Card className="card h-100">
-                    <CardImg top src={image} alt={name} className="h-75 mb-3" />
+                    <CardImg top src={image} alt={name} className="h-75" />
                     <CardBody>
-                        <h4 className="text-center">{name}</h4>
+                        <h4 className="text-center mt-2 fw-bold">{name}</h4>
                     </CardBody>
                 </Card>
             </a.div>
