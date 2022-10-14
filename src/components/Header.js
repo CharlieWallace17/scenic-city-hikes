@@ -29,7 +29,7 @@ const Header = () => {
                 <h1 className="ms-3">Scenic City Hikes</h1>
             </NavbarBrand>
 
-            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
+            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} className="mx-auto" />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className="ms-auto" navbar>
                     <NavItem>

@@ -3,7 +3,7 @@ import { useSpring, a } from "react-spring";
 import { Card, CardBody, CardImg } from "reactstrap";
 
 const FlipCard = ({ park }) => {
-    const { image, name } = park;
+    const { image, name, description } = park;
     const [flipped, set] = useState(false);
     const { transform, opacity } = useSpring({
         opacity: flipped ? 1 : 0,
@@ -22,7 +22,7 @@ const FlipCard = ({ park }) => {
             >
                 <Card className="flip-card-back h-100">
                     <CardBody>
-                        <h4 className="text-center">{name}</h4>
+                        <h4 className="text-center">{description || null}</h4>
                     </CardBody>
                 </Card>
             </a.div>

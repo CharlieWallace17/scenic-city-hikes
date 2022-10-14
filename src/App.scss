@@ -107,18 +107,6 @@ nav button.btn {
     backface-visibility: hidden;
 }
 
-.my-container {
-    // width: 100vw;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
-}
-
-.flip-container {
-    // grid-row-start: 1fr;
-    // grid-column-start: 1fr;
-    // place-self: center;
-}
-
 .back-card {
     position: absolute;
 }
@@ -143,4 +131,8 @@ nav button.btn {
 
 svg:hover {
     rotate: 10deg;
+}
+
+.flip-card-back h4 {
+    font-size: 1.25vw;
 }
