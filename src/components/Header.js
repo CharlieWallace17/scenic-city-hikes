@@ -33,22 +33,22 @@ const Header = () => {
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className="ms-auto" navbar>
                     <NavItem>
-                        <NavLink className="nav-link" to="/">
+                        <NavLink className="nav-link" to="/about">
                             <i className="bi bi-info-circle"></i> About Us
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/">
+                        <NavLink className="nav-link" to="/trails">
                             <i className="bi bi-binoculars"></i> Trails
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/">
+                        <NavLink className="nav-link" to="/donate">
                             <i className="bi bi-piggy-bank"></i> Donate
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/">
+                        <NavLink className="nav-link" to="/contact">
                             <i className="bi bi-card-list"></i> Contact Us
                         </NavLink>
                     </NavItem>
