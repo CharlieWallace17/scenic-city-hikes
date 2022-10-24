@@ -23,7 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass-dev": "sass --watch --update --style=expanded src:src",
-    "sass-prod": "sass --no-source-map --style=compressed src:src"
+    "sass-prod": "sass --no-source-map --style=compressed src:src",
+    "dev-env": "concurrently \"npm start\" \"npm run sass-dev\""
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0"
   }
 }

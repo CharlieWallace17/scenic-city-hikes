@@ -12,6 +12,9 @@ body {
     letter-spacing: 4px;
     font-family: $header-font;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .menu,
@@ -43,14 +46,6 @@ svg {
     fill: $color-pale;
 }
 
-.modal-header,
-form,
-form a {
-    color: $color-dark;
-    font-weight: 600;
-    letter-spacing: 0px;
-}
-
 nav button.btn {
     background-color: $color-primary;
     color: $color-pale;
@@ -58,20 +53,6 @@ nav button.btn {
     font-weight: 600;
     width: 10rem;
     margin-bottom: 1rem;
-}
-
-.modal-header {
-    color: $color-pale;
-    background-color: $color-dark;
-    width: 100%;
-}
-
-.modal-content {
-    font-size: 1.1rem;
-}
-
-.modal-title {
-    font-size: 3rem;
 }
 
 .navbar-toggler-icon {
@@ -135,4 +116,47 @@ svg:hover {
 
 .flip-card-back h4 {
     font-size: 1.25vw;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.about-page {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-pic {
+    width: 40%;
+}
+
+.about-text {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: $color-black-transparent;
+    margin-right: -200px;
+    z-index: 1;
+}
+
+.about-text h3, p {
+    margin-bottom: 2rem;
+}
+
+.about-text h3 {
+    font-size: 2.5rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
 }

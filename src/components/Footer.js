@@ -2,7 +2,7 @@ import { Container, Row, Col } from "reactstrap";
 
 const Footer = () => {
     return (
-            <Container fluid className="footer">
+            <Container fluid className="footer mt-auto">
                 <Row className="align-items-center">
                     <Col sm="12" className="text-center mt-3">
                         <h5>Connect With Us!</h5>

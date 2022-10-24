@@ -9,7 +9,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 
 function App() {
     return (
-        <>
+        <div className="screen">
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
@@ -19,7 +19,7 @@ function App() {
                 <Route path="contact" element={<ContactUsPage />} />
             </Routes>
             <Footer />
-        </>
+        </div>
     );
 }
 
