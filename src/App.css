@@ -148,8 +148,25 @@ svg:hover {
   font-size: 2.5rem;
 }
 
-.about-text p {
+.about-text p,
+.contact-page {
   font-size: 1.2rem;
+}
+
+.form-control {
+  font-size: 1.5rem;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  font-size: 1.5rem !important;
+  color: #ecf1be !important;
+}
+
+.form-page {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=App.css.map */

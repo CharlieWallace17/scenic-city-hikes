@@ -12,7 +12,7 @@ const CardsList = () => {
                     return (
                         park && (
                             <Col md="4">
-                                <FlipCard park={park} key={park.id} />
+                                <FlipCard park={park} key={park.name} />
                             </Col>
                         )
                     );
