@@ -8,19 +8,21 @@ const DonateButton = ({ currency, amount }) => {
     }, [amount]);
 
     return (
+        <>
         <PayPalButtons
-            style={{ color: "black", label: "donate" }}
+            className="paypal-btn"
+            style={{ label: "donate" }}
             fundingSource="paypal"
             createOrder={(data, actions) => {
                 return actions.order.create({
                     purchase_units: [
                         {
                             amount: {
-                                value: amount,
+                                value: amountRef.current,
                                 breakdown: {
                                     item_total: {
                                         currency_code: currency,
-                                        value: amount
+                                        value: amountRef.current
                                     }
                                 }
                             },
@@ -31,7 +33,7 @@ const DonateButton = ({ currency, amount }) => {
                                 quantity: "1",
                                 unit_amount: {
                                     currency_code: currency, 
-                                    value: amount
+                                    value: amountRef.current
                                 },
                                 category: "DONATION"
                                 }
@@ -41,6 +43,41 @@ const DonateButton = ({ currency, amount }) => {
                 })
             }}
         />
+        <PayPalButtons
+            className="venmo-btn"
+            style={{ label: "donate" }}
+            fundingSource="venmo"
+            createOrder={(data, actions) => {
+                return actions.order.create({
+                    purchase_units: [
+                        {
+                            amount: {
+                                value: amountRef.current,
+                                breakdown: {
+                                    item_total: {
+                                        currency_code: currency,
+                                        value: amountRef.current
+                                    }
+                                }
+                            },
+                            items: [
+                                {
+                                name: "Chattanooga Hiking Donation",
+                                description: "All proceeds directly support preserving Chattanooga hiking trails.",
+                                quantity: "1",
+                                unit_amount: {
+                                    currency_code: currency, 
+                                    value: amountRef.current
+                                },
+                                category: "DONATION"
+                                }
+                            ] 
+                        }
+                    ]
+                })
+            }}
+        />
+        </>
     );
 };
 

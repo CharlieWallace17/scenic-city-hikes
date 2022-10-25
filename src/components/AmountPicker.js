@@ -1,7 +1,7 @@
 const AmountPicker = ({ onAmountChange }) => {
     return (
-        <fieldset onChange={onAmountChange}>
-            <legend>Donation Amount</legend>
+        <fieldset onChange={onAmountChange} className="amount-picker">
+            <legend>Donation Amount:</legend>
             <label>
                 <input type="radio" value="5.00" defaultChecked="true" name="amount" />
                 $5.00

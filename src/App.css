@@ -169,4 +169,61 @@ button {
   padding: 2rem;
 }
 
+.paypal-btn,
+.venmo-btn {
+  width: 500px;
+  height: 50px;
+}
+
+.paypal-btn {
+  margin: 2rem auto;
+}
+
+.venmo-btn {
+  margin: 0 auto;
+}
+
+.donate-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+}
+
+.donate-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  padding: 2rem;
+}
+
+.donate-content h1,
+.donate-content p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.donate-content p {
+  font-size: 1.2rem;
+}
+
+.amount-picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
 /*# sourceMappingURL=App.css.map */
