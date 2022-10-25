@@ -22,6 +22,7 @@ const Footer = () => {
                         </a>
                     </Col>
                 </Row>
+                <p className="copyright">© Charlie Wallace 2022</p>
             </Container>
     );
 };

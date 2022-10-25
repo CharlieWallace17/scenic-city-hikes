@@ -230,7 +230,13 @@ button {
     justify-content: center;
 }
 
-label {
+.amount-picker label {
     margin: 1rem;
     font-size: 1.2rem;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
