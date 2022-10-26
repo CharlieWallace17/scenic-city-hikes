@@ -157,7 +157,7 @@ svg:hover {
   font-size: 1.5rem;
 }
 
-button {
+form button {
   width: 200px;
   height: 60px;
   font-size: 1.5rem !important;
@@ -189,7 +189,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 750px;
+  width: 55%;
 }
 
 .donate-content {
