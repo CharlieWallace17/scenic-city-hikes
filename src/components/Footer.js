@@ -7,7 +7,7 @@ const Footer = () => {
                     <Col sm="12" className="text-center mt-3">
                         <h5>Connect With Us!</h5>
                     </Col>
-                    <Col sm="12" className="text-center mb-4">
+                    <Col sm="12" className="text-center">
                         <a href="http://instagram.com/">
                             <i className="bi bi-instagram"></i>
                         </a>{' '}

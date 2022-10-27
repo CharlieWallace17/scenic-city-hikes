@@ -11,8 +11,8 @@ const CardsList = () => {
                 {parks.map((park) => {
                     return (
                         park && (
-                            <Col md="4">
-                                <FlipCard park={park} key={park.name} />
+                            <Col md="4" key={park.id}>
+                                <FlipCard park={park}/>
                             </Col>
                         )
                     );

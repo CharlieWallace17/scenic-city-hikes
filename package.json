@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "@paypal/react-paypal-js": "^7.8.1",
+    "@react-google-maps/api": "^2.13.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
+    "dotenv": "^16.0.3",
     "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -26,7 +28,7 @@
     "eject": "react-scripts eject",
     "sass-dev": "sass --watch --update --style=expanded src:src",
     "sass-prod": "sass --no-source-map --style=compressed src:src",
-    "dev-env": "concurrently \"npm start\" \"npm run sass-dev\""
+    "dev": "concurrently \"npm start\" \"npm run sass-dev\""
   },
   "eslintConfig": {
     "extends": [

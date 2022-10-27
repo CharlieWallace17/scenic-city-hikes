@@ -71,8 +71,6 @@ nav button.btn {
     padding: 1rem;
     color: black;
     box-shadow: 2px 2px 5px $color-black-transparent;
-    font-weight: bolder;
-    font-size: calc(max(20px, 2vw));
 }
 
 .card:hover,
@@ -102,10 +100,7 @@ nav button.btn {
     color: $color-pale;
 }
 
-.menu .ms-auto .nav-link {
-    font-size: 20px;
-}
-
+.menu .ms-auto .nav-link,
 .menu .bi {
     font-size: 20px;
 }
@@ -115,7 +110,7 @@ svg:hover {
 }
 
 .flip-card-back h4 {
-    font-size: 1.25vw;
+    font-size: 1.2rem;
 }
 
 .screen {
@@ -239,4 +234,13 @@ form button {
     font-size: 0.7rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+}
+
+.map-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.card img {
+    min-height: 75%;
 }
