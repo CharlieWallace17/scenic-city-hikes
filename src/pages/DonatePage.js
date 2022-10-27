@@ -19,7 +19,7 @@ const DonatePage = () => {
                 <Col sm="12">  
                     <p>100% of proceeds go to the Chattanooga wildlife foundation. We need your help to preserve what makes us the Scenic City!</p>
                 </Col>
-                <Col>  
+                <Col sm="12">  
                     <DonateForm />
                 </Col>
             </Row>

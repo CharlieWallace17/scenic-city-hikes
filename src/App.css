@@ -112,31 +112,25 @@ svg:hover {
 }
 
 .about-page {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.about-pic {
-  width: 40%;
+.about-pic img {
+  min-width: 500px;
+  max-width: 30vw;
 }
 
 .about-text {
-  width: 40%;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
-  margin-right: -200px;
-  z-index: 1;
 }
 
-.about-text h3, p {
-  margin-bottom: 2rem;
+.about-text h3,
+.about-text p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .about-text h3 {
