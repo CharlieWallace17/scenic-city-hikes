@@ -6,7 +6,7 @@ const CardsList = () => {
     const parks = PARKS;
 
     return (
-            <Container className="my-container">
+            <Container className="my-container" fluid>
                 <Row>
                 {parks.map((park) => {
                     return (

@@ -12,7 +12,7 @@ const DonatePage = () => {
             }}
         >
         <Container className="donate-page"> 
-            <Row className="donate-content">
+            <Row className="donate-content m-3">
                 <Col sm="12">  
                     <h1>Donate Today!</h1>
                 </Col>

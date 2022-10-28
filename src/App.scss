@@ -61,6 +61,28 @@ nav button.btn {
     color: $color-dark;
 }
 
+.my-container div.row {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+div.my-container {
+    padding: 0;
+}
+
+.flip-container,
+div.col-md-4 {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    max-height: 400px;
+}
+
+div.col-md-4 {
+    margin: 1rem;
+}
+
 .flip-card-back {
     background-color: white;
     color: black;
