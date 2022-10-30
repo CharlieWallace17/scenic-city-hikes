@@ -1,11 +1,9 @@
-import { Container, Row, Col } from "reactstrap";
 import edwardsPointPic from "../assets/edwards-point-pic.jpg";
 
 const AboutUsPage = () => {
     return (
-        <Container fluid>
-            <Row className="about-page">
-                <Col sm="8" className="about-text mb-3 mb-md-0">
+            <div className="about-page">
+                <div className="about-text">
                     <h3>What Moves Us?</h3>
                     <p>
                         Recently moved to Chattanooga, Tennessee, Charlie
@@ -19,15 +17,13 @@ const AboutUsPage = () => {
                         organizations that keep these places looking beautiful.
                     </p>
                     <p>Thus, Scenic City Hikes was born.</p>
-                </Col>
-                <Col sm="3" className="about-pic">
-                    <img
-                        src={edwardsPointPic}
-                        alt="Edward's Point"
-                    />
-                </Col>
-            </Row>
-        </Container>
+                </div>
+                <div
+                    className="about-pic"
+                    style={{ backgroundImage: 'url(' + edwardsPointPic + ')'}}
+                >
+                </div>
+            </div>
     );
 };
 

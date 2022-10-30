@@ -37,29 +37,10 @@ svg {
   fill: #ecf1be;
 }
 
-nav button.btn {
-  background-color: #42855b;
-  color: #ecf1be;
-  font-size: 1.5rem;
-  font-weight: 600;
-  width: 10rem;
-  margin-bottom: 1rem;
-}
-
-.navbar-toggler-icon {
-  width: 32px;
-  height: 40px;
-  color: #483838;
-}
-
 .my-container div.row {
   display: flex;
   justify-content: center;
   margin: 0;
-}
-
-div.my-container {
-  padding: 0;
 }
 
 .flip-container,
@@ -115,7 +96,7 @@ div.col-md-4 {
 
 .menu .ms-auto .nav-link,
 .menu .bi {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 svg:hover {
@@ -134,19 +115,34 @@ svg:hover {
 }
 
 .about-page {
+  display: block;
+}
+
+div.about-pic {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.about-pic,
+div.about-text {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.about-pic img {
-  min-width: 500px;
-  max-width: 30vw;
-}
-
 .about-text {
-  padding: 20px;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-text h3,
@@ -164,6 +160,35 @@ svg:hover {
   font-size: 1.2rem;
 }
 
+@media (min-width: 1000px) {
+  .about-page {
+    display: flex;
+  }
+  div.about-pic {
+    flex: 1 2 auto;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 1rem;
+  }
+  div.about-pic,
+div.about-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .about-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 .form-control {
   font-size: 1.5rem;
 }
@@ -195,9 +220,7 @@ form button {
 }
 
 .donate-page {
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 55%;
@@ -250,6 +273,10 @@ form button {
 
 .card img {
   min-height: 75%;
+}
+
+.footer h5 {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=App.css.map */
