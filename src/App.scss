@@ -160,12 +160,15 @@ div.about-text {
 }
 
 .about-text h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
-.about-text p,
+.about-text p {
+    font-size: 2rem;
+}
+
 .contact-page {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 @media (min-width: 1000px) {
